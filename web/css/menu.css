@@ -1,0 +1,369 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/11/2016, 10:23:07 PM
+    Author     : Yax
+*/
+@font-face {
+font-family:Hiruko;
+src: url(font/HirukoBlackAlternate.ttf);
+}
+@font-face {
+font-family:Lane;
+src: url(fonts/Sullivan.ttf);
+}
+@font-face {
+font-family:Psicotic;
+src: url(font/personality.ttf);
+}
+.color{
+    background: transparent;
+    border: none;
+    border-color: transparent;
+    transition: 0.5s all linear;
+}
+.color.cambia-color {
+    background-color: white;
+}
+.enlaces>li>a{
+	color: white;
+        font-family: Lane;
+        font-size: 28px;
+}
+.enlaces>li>a.cambia-color{
+	color: black;
+}
+.enlaces>li>a:hover,
+.enlaces>li>a.hover
+{
+    color: #FBD157;
+    background-color: transparent;
+}
+.enlaces> li>a:focus,
+.enlaces>li>a.focus{
+    background-color: #FBD157;
+    color: white;
+    border-radius: 8px;
+    outline: 0px;
+}
+.enlaces> li>a:active,
+.enlaces>li>a.active{
+    background-color:  #FBD157;
+    outline: 0px;
+    border-radius: 8px;
+    color:white;
+}
+.enlaces2{
+	background-color: #ED9153;
+        font-family: Lane;
+        font-size: 23px;
+}
+.enlaces2>li>a{
+	background: transparent;
+        color: white;
+}
+.enlaces2>li>a:hover{
+	background: transparent;
+        color: #FBD157;
+}
+.enlaces> li>a:focus,
+.enlaces>li>a.focus{
+    background: #FBD157;
+    outline: 0px;
+    color:white;
+}
+.enlaces> li>a:active,
+.enlaces>li>a.active{
+    background: #FBD157;
+    outline: 0px;
+    color:white;
+}
+.hm-icon{
+	background: white;
+}
+.hm-lk{
+	color: white;
+        font-family: Hiruko;
+        font-size: 23px;
+}
+.hm-lk.cambia-color{
+	color: black;
+}
+.hm-lk:hover{
+    color: #FBD157;
+}
+.hm-lk:focus{
+    color: #FBD157;
+}
+.hm-lk:active{
+    color: #FBD157;
+}
+.culbtn{
+    width:135px;
+    height: 34px;
+    font-family: Lane;
+    font-size: 23px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background-color:  #FBD157;
+    border: none;
+    border-radius: 8px;
+}
+.culbtn:hover {
+    background-color: rgba(0,0,0,0);
+    color: white;
+    box-shadow: inset 0 0 0 3px  #FBD157;
+}
+.culbtn2{
+    width:100px;
+    height: 40px;
+    font-family: Lane;
+    font-size: 23px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background-color:  #FBD157;
+    border: none;
+    border-radius: 8px;
+}
+.culbtn2:hover {
+    background-color: rgba(0,0,0,0);
+    color: black;
+    box-shadow: inset 0 0 0 3px  #FBD157;
+}
+.culbtn>input{
+    width:65px;
+    height: 34px;
+    font-family: Lane;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background-color:  #FBD157;
+    border: none;
+    border-radius: 8px;
+}
+.culbtn>input:hover {
+    background-color: rgba(0,0,0,0);
+    color: white;
+    box-shadow: inset 0 0 0 3px  #FBD157;
+}
+.campo{
+    font-family: Lane;
+    font-size: 25px;
+    color: black;
+}
+.validacion{
+    background-color: #578a71;
+    color: white;
+    font-family: Lane;
+    font-size: 25px;
+}
+.noculbtn{
+    width: 100px;
+    height: 40px;
+    font-family: Lane;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+.noculbtn:hover {
+    background-color: rgba(0,0,0,0);
+    color: black;
+    box-shadow: inset 0 0 0 3px gray;
+}
+.centrado{
+    font-family: Lane;
+    font-size: 23px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+.datox>div>div>input{
+    font-size: 23px;
+    color: black;
+}
+.datox>div>div>input:focus{
+    outline: 0px;
+}
+.snc{
+    color: red;
+    visibility: hidden;
+}
+.area{
+    font-size: 20px;
+    color: black;   
+}
+.buscarD{
+    text-align: right;
+}
+.buscarD>img{
+    width: 40px;
+    height: 40px;
+}
+.perfils{
+    text-align: right;
+}
+.perfils>a{
+    text-align: right;
+    font-size: 23px;
+    text-decoration: none;
+}
+.adornos{
+    height: 180px;
+     border: 3px dotted #578a71;
+}
+.adornos>a{
+    font-size: 20px;
+    text-decoration: none;
+}
+.centrox{
+    text-align: center;
+    font-size: 30px;
+    font-family: Lane;
+     border: 3px dotted #578a71;
+}
+#globo{
+    width: 60%;
+    height: 150px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #555;
+    background-color: #666;
+    position: relative;
+    color: #FFF;
+    float: left;
+}
+#globo:before{
+    content: "";
+    width: 0;
+    position: absolute;
+    border-style: solid;
+    border-width: 5px 0 5px 10px;
+    border-color: transparent #666;
+    top: 20px;
+    right: -10px;
+}
+.ppIMG{
+    background-image: url('imgs/mostros.jpg');
+    height: 300px;
+    width: 100%;
+}
+.colors{
+    background-color: #ED9153;
+    font-size: 23px;
+}
+.culbtn3{
+    width: 350px;
+    height: 60px;
+    font-family: Lane;
+    font-size: 35px;
+    text-align: center;
+    cursor: pointer;
+    outline: 0px;
+    color: black;
+    background-color: rgba(255,255,255,1);
+    border: none;
+    border-radius: 8px;
+}
+.culbtn3:hover {
+    outline: 0px;
+    background-color: rgba(0,0,0,0);
+    color: black;
+    box-shadow: inset 0 0 0 3px  #8a4545;
+    outline: none;
+}
+.titleh1{
+	color: black;
+        font-family: Lane;
+        font-size: 45px;
+}
+.tipss{
+	color: black;
+        font-family: Psicotic;
+        font-size: 35px;
+}
+.creditos{
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+.creditos>div>p{
+    font-family: Hiruko;
+    font-size: 28px;
+}
+.creditosR>a{
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    outline: 0;
+    text-decoration: none;
+}
+.facebook:hover{
+    color: #3b5998;
+}
+.youtube:hover{
+    color: #b31217;
+}
+.twitter:hover{
+    color: #4099FF;
+}
+.creditos>div{
+    font-family: Lane;
+    font-size: 20px;
+}
+.line{
+     height: 2px;
+     background-color: black;
+     width: 90%;
+}
+.bahh{
+    background-color: #ED9153;
+    width: 100%;
+}
+.fraes{
+    font-family: Lane;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.bbl{
+    height: 1px;
+    width: 10%;
+}
+.colorito{
+    background-color: #FBD157;   
+}
+.bugg{
+    background-color: #FBD157;
+    width: 100%;
+}
+.centrox22{
+    text-align: center;
+    font-size: 30px;
+    font-family: Lane;
+    background-image: url('imgs/perri-tu.jpg');
+}
+.hm-lk2{
+	color: black;
+        font-family: Lane;
+        font-size: 25px;
+}
+.colorx{
+    background: transparent;
+    border: none;
+    border-color: transparent;
+    transition: 0.5s all linear;
+}
+.colorx.cambia-color {
+    background-color: #ED9153;
+}
