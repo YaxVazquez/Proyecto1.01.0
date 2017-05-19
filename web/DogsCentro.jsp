@@ -30,12 +30,14 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-        <title>Perfil del centro</title>
+        <title>Perros - Dogs&CoCentros</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="img/holi.ico" />
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/iconos.css">
         <link rel="stylesheet" href="css/estilos1.css">
         <link href="css/cese.css" rel="stylesheet">
 
@@ -46,7 +48,7 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <nav class="navbar navbar-default" >
+        <nav class="navbar colos">
           <div class="container-fluid" >
             <div class="navbar-header">
               <button class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -54,11 +56,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-                <a class="navbar-brand " >Perros</a>
+               <p class="navbar-brand hm-lkpa"><span class="icon icon-paw"> </span> Centros Dogs & Co.</p>
             </div>
             
             <div class="collapse navbar-collapse colo" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right ">
+            <ul class="nav navbar-nav navbar-right enlaces">
               
               <li><a href="PerfilCentro.jsp">Perfil Centro</a></li>
                             <li><a href="#" data-toggle="modal" data-target="#registro">Agregar Perro</a></li>
@@ -75,8 +77,8 @@
         <div style="text-align:center; margin-left: auto; margin-right: auto; margin-top: 20px;">
             <h3 style="display:inline">Busca un perro</h3> 
             <form action="DogsCentro.jsp" class="form-horizontal" method="post"  style="text-align:center; margin-left: auto; margin-right: auto;">
-            <input type="text"    style="display:inline;" name="busque" id="busque" placeholder="Buscar un perro por su nombre" required>
-            <input type="submit" name="Buscar"style="display:inline" value="Buscar">
+            <input type="text" class='babee' style="display:inline;" name="busque" id="busque" placeholder="Buscar perro por nombre" required>
+            <input type="submit" class='culbtn' name="Buscar"style="display:inline" value="Buscar">
             </form>
             <% 
             
@@ -170,11 +172,11 @@
               out.println("<div class='modal-dialog modal-lg'>");
                 out.println("<div class='modal-content'>");
                   out.println("<form action='DogsCentro.jsp' class='form-horizontal' method='post'>");
-                  out.println("<div class='modal-header'>");
+                  out.println("<div class='modal-header fondo'>");
                     out.println("<button class='close' aria-hidden='true' data-dismiss='modal'>&times;</button>");
-                    out.println("<h4 class='modal-title'>Modificar Datos</h4>");
+                    out.println("<h3 class='modal-title'>Modificar Datos</h3>");
                   out.println("</div>"
-                          + "<div class='modal-body'>"
+                          + "<div class='modal-body centrado datox'>"
                           + " <div class='form-group'>"
                           + " <label for='Nombre' class='col-xs-12 col-sm-12 col-md-1 col-md-offset-1 col-lg-1 col-lg-offset-1 control-label'> Nombre </label>"
                           + "<div class='col-xs-12 col-sm-12 col-md-4 col-lg-4'>"
@@ -196,8 +198,8 @@
                                   + " <input type='text' class='form-control' name='sexo' id=sexo' value='"+sex+"'disabled=”disabled” ></div></div> <div class='form-group'>"
                           + "<label for='Contraseña' class='col-xs-12 col-sm-12 col-md-2 col-lg-2 control-label'>Descripcion</label>"
                           + "<div class='col-xs-12 col-sm-12 col-md-4 col-lg-4'>"
-                          + "<textarea class='form-control' name='descripcion' id='descripcion' value='"+desc+"'></textarea></div></div></div><div class='modal-footer'>"
-                          + "<input type='submit' name='Modificar"+i+"' id='Modificar' value='Modificar' onClick='return validar(nome,contrase,telefo,correo);'>"
+                          + "<textarea class='form-control' name='descripcion' id='descripcion' value='"+desc+"'></textarea></div></div></div><div class='modal-footer nofond'>"
+                          + "<input type='submit' class='culbtn' name='Modificar"+i+"' id='Modificar' value='Modificar' onClick='return validar(nome,contrase,telefo,correo);'>"
                           + " </div></form></div></div> </div>");
                         out.println("<input type='hidden' value='"+nperros.get(i)+"' id=''>");
                         
@@ -355,11 +357,11 @@
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <form action="DogsCentro.jsp" class="form-horizontal" method="post">
-                  <div class="modal-header">
+                  <div class="modal-header fondo">
                     <button class="close" aria-hidden="true" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Registrar Perro</h4>
+                    <h3 class="modal-title">Registrar Perro</h3>
                   </div>
-                  <div class="modal-body">
+                  <div class="modal-body centrado datox">
                       <div class="form-group">
                         <label for="Nombre" class="col-xs-12 col-sm-12 col-md-1 col-md-offset-1 col-lg-1 col-lg-offset-1 control-label"> Nombre </label>
                         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
@@ -422,8 +424,8 @@
                       </div>
                       
                     </div>
-                 <div class="modal-footer">
-                    <input type='submit' name='RegistroS' id='RegistroS' class='btn' value='Registrar' onClick='return validar(contrax, conf);'>
+                 <div class="modal-footer nofond">
+                    <input type='submit' class="culbtn" name='RegistroS' id='RegistroS' class='btn' value='Registrar' onClick='return validar(contrax, conf);'>
                   </div>
                 </form>
                 </div>

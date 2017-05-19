@@ -20,6 +20,10 @@ src: url(font/HirukoBlackAlternate.ttf);
 font-family:Lane;
 src: url(fonts/Sullivan.ttf);
 }
+@font-face {
+font-family:Psicotic;
+src: url(font/personality.ttf);
+}
 .color{
     background: transparent;
     border: none;
@@ -81,7 +85,7 @@ src: url(fonts/Sullivan.ttf);
 }
 .centrado{
     font-family: Lane;
-    font-size: 28px;
+    font-size: 24px;
     color: black;
     text-align: center;
     text-decoration: none;
@@ -197,4 +201,18 @@ a:focus{
 .bad{
     background-image: url('imgs/fondo.png');
     text-align: center;    
+}
+.titleh1{
+	color: black;
+        font-family: Lane;
+        font-size: 45px;
+}
+.tipss{
+	color: black;
+        font-family: Psicotic;
+        font-size: 35px;
+}
+.bbl{
+    height: 1px;
+    width: 10%;
 }

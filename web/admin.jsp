@@ -12,13 +12,17 @@
  <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Administrador</title>
+        <title>Administrador D&C</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="shortcut icon" type="image/x-icon" href="img/holi.ico" />
+
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/miestilo.css">
         <link rel="stylesheet" href="css/icomoon.css">
+        <link rel="stylesheet" href="css/iconos.css">
+        <link rel="stylesheet" href="css/estilos1.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         
     </head>
@@ -27,24 +31,24 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <nav class="navbar navbar-default nav-app">
+        <nav class="navbar colos">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand micolor" style="color:black;"> <span class="icon-paw"></span>Administrador</a>
+                     <p class="navbar-brand hm-lkpa"><span class="icon icon-paw"> </span> Administrador Dogs & Co.</p>
                 </div>
             </div>
         </nav>
         
-        <div class="container">
+        <div class="container datox">
             <h2>Bienvenido</h2>
             <br>
             <form name="form" action="admin.jsp" method="post">
-                <div c id="cuadro">
+                <div id="cuadro">
                     <label >Clave de Acceso:</label>
-                    <input type="password" placeholder="Clave de Acceso" class="form-control" autocomplete="off" name="clave1" id="clave">
+                    <input type="password" placeholder="Clave de Acceso" class="form-control colif" autocomplete="off" name="clave1" id="clave">
                     <label id="texto" style="color: red; visibility: hidden;">Clave Incorrecta</label>
                 </div>
-                <input type="submit" class="btn" value="Ingresar" id="mybtn" name="mybtn">
+                <input type="submit" class="culbtn" value="Ingresar" id="mybtn" name="mybtn">
             </form>
         </div>
         

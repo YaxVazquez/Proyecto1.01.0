@@ -304,7 +304,7 @@
                                 + "</h3><br>"
                                 + "<p class='fraes'><b>Teléfono:</b> "+ lista.get(i).getTelefono()+"</p><br>"
                                 + "<p class='fraes'><b>Correo:</b> "+ lista.get(i).getCorreo()+"</p>"
-                                        + "<input type='submit' class='btn culbtn2' value='Ver' id='perfils' name='perfils'>"
+                                        //+ "<input type='submit' class='btn culbtn2' value='Ver' id='perfils' name='perfils'>"
                                                 + "</form></div>\"");
                         out.println("}");
 			out.println("var gIW"+ i +"= new google.maps.InfoWindow(objHTML);");	

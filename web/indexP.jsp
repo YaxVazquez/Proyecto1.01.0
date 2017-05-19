@@ -8,9 +8,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Inicio</title>
+        <title>Inicio - Dogs&CoCentros</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="img/holi.ico" />
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -31,7 +32,7 @@
                 <button class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="glyphicon glyphicon-info-sign"></span>
               </button>
-              <p class="navbar-brand hm-lk"><span class="icon icon-paw"> </span> Administrador Dogs & Co.</p>
+              <p class="navbar-brand hm-lkpa"><span class="icon icon-paw"> </span> Centros Dogs & Co.</p>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right enlaces">

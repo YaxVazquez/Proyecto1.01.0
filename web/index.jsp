@@ -71,7 +71,9 @@
               <li><a href="LandingPage.html">Dogs&Co app</a></li>
               <li><a href="#" data-toggle="modal" data-target="#registro">Registrate</a></li>
               <li><a href="#" data-toggle="modal" data-target="#sesions">Inicia Sesión</a></li>
-              <li><a href="#Contacto">Contactanos</a></li>
+              <li><a href="#Contacto">Contáctanos</a></li>
+              <li><a href="#Team">Conócenos</a></li>
+              <li><a href='FAQ.html'><span class="glyphicon glyphicon-info-sign" style='font-size: 20px;'></span> </a> </li>
             </ul>
               
             <div class="modal fade centrado" id ="registro">
@@ -270,7 +272,7 @@
             <div class="form-group">
               <label for="Comentario" class="col-xs-12 col-sm-12 col-md-2 col-lg-2">Comentario</label>
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <textarea class="form-control campos" rows="8" id='coment' name='coment' placeholder="Dudas, comentarios o sugerencias." autocomplete='off' required></textarea>
+                <textarea class="form-control campos" rows="5" id='coment' name='coment' placeholder="Dudas, comentarios o sugerencias." autocomplete='off' required></textarea>
               </div>
             </div>
             <div class="form-group">
@@ -280,6 +282,17 @@
           </form>
         </div>
 </div>
+        <div class="container" id="Team">
+            <h1 class="titleh1 col-lg-offset-5"> Equipo de trabajo <p class="tipss "> &nbsp; &nbsp; &nbsp; &nbsp; DOGS&CO.</p> </h1> 
+            <hr class="bbl"> <span class="col-lg-offset-6 glyphicon glyphicon-heart"></span> <hr class="bbl"> 
+            <div class='container'> 
+                <div class='col-lg-3'><img class='img-responsive img-circle img-profile' src='img/yoxibb.jpg'> </div>
+                <div class='col-lg-3'><img class='img-responsive img-circle img-profile' src='img/chrostybb.jpg'> </div>
+                <div class='col-lg-3'><img class='img-responsive img-circle img-profile' src='img/clomi2bb.jpg'> </div>
+                <div class='col-lg-3'><img class='img-responsive img-circle img-profile' src='img/aldocto.jpg'> </div>
+            </div>
+            <div class='container-fluid'> <br> <br> <br></div>
+    </div>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>

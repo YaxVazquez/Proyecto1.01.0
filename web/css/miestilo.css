@@ -13,14 +13,22 @@ src: url(fuentes/HirukoBlackAlternate.ttf);
 }
 
 .error{
+    font-size: 22px;
     color: red; 
     visibility: hidden;
 }
 
 body{
+    font-size: 22px;
     font-family: HelloAnnie;
 }
 
 .micolor{
     font-family: HirukoBlackAlternate;
+}
+.colif{
+    font-size: 22px;
+}
+.colif:focus{
+    outline: 0px;
 }

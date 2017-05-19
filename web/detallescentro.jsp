@@ -68,7 +68,7 @@
                                r = s.executeQuery("select * from Usuario where Correo ='"+ emails +"';");
                                if (r.next()){
                                     String NameUs = r.getString("NombreUsuario");                                 %>
-         <nav class="navbar colorito">
+         <nav class="navbar coloritoxx">
           <div class="container-fluid">
               
             <div class="navbar-header">
@@ -80,7 +80,7 @@
               <a href="PaginaPrincipal.jsp" class="navbar-brand hm-lk"><span class="icon icon-paw"> </span>Dogs & Co.</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right enlaces">
+            <ul class="nav navbar-nav navbar-right enlaces3">
                 <li><a href="perfil.jsp"> <span class='glyphicon glyphicon-user'></span> <% 
                     out.println(NameUs); 
                    %> </a></li>
@@ -110,7 +110,7 @@
         </nav> 
             <%              if(request.getParameter("perfils") != null){
                                try {
-                                    r = s.executeQuery("select * from centro join direccioncentro join Perro join Fotos where Fotos.IdPerro= perro.IdPerro and centro.IdDireccion = direccioncentro.IdDireccion and centro.IdCentro = Perro.IdCentro and NombreCentro = '"+centro+"';");
+                                    r = s.executeQuery("select * from centro join direccioncentro where centro.IdDireccion = direccioncentro.IdDireccion and NombreCentro = '"+centro+"';");
                                     if (r.next()){
                                         String NameCe = r.getString("NombreCentro");
                                         String UserC = r.getString("Usuario");
@@ -127,7 +127,7 @@
                                         String estado = r.getString("Estado");
                                         
                                         out.println("<div class='container centrox22'>  <figure class='fig-profile wow fadeIn col-lg-offset-3' style='visibility: visible; animation-name: fadeIn;'>"
-                    + "&nbsp; &nbsp;&nbsp; &nbsp;<img class='img-responsive img-circle img-profile' src='img/Walk.jpg'> "
+                    + "<img class='col-lg-offset-1 img-responsive img-circle img-profile' src='img/Walk.jpg'> "
                     + "</figure><h2>" + NameCe + "</h2>"
                                                 + "@"+UserC+ "<br><br>"
                                                         + "<span class='glyphicon glyphicon-earphone'> </span>Telefono: " +tel+ "<br>"
@@ -214,76 +214,6 @@
                 </div>
               </div>
             </div>
-                    
-         <div class="container-fluid ppIMG" id="juas">
-                          <div style="text-align: center; margin-top: 150px;">
-                              <h1 style=" color:white;text-shadow: 1px 1px 0 #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000, 0 1px #000000, 1px 0 #000000, -1px 0 #000000, 0 -1px #000000;">Selecciona el centro</h1>
-                              <form action="detallescentro.jsp" method="post">
-                              <% 
-                              
-                              if(request.getParameter("ok") !=null ){
-                              r = s.executeQuery("select * from Centro where NombreCentro='"+centro+"';");
-                              r.next();
-                              String idCentr=r.getString("idCentro");
-                              p.setId(idCentr);
-                                  
-                              }
-                              ArrayList<Productos> k = (ArrayList)p.BuscarTodos(); 
-    ArrayList<Productos> lis = (ArrayList)m.BuscarTodas();
-    ArrayList<String> nperros = new ArrayList<String>();
-                              %>
-                              
-                              <input type="submit" name="ok" value="Ver perros">
-                              </form>
-                          </div>
-                      </div>
-                                                                
-                              <div class="container" style="margin-top: 20px;">
-      <% out.println("<h1 style='text-align:center;'>Nombre del centro: "+centro+"</h1>");%>
-    <%for (int i = 0; i < k.size(); i++) {%>
-     
-        <div class="col-xs-12 col-sm-6 col-md-6">
-               <div class="well well-sm">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <img src="img/<%=lis.get(i).getRuta()%>" alt="" class="img-rounded img-responsive" />
-                    </div>
-                    <div class="col-sm-6 col-md-8">
-                        <h4> <%= k.get(i).getNombre()%></h4>
-                        <% nperros.add(i,k.get(i).getNombre() );%>
-                        <% String nombre=nperros.get(i); %>
-                        
-                                                <p>
-                            Color: <%=k.get(i).getCantidad()%>
-                            <br />
-                           Peso: <%=k.get(i).getPrecio()%> kg
-                            <br />
-                            Tamaño: <%=k.get(i).getRutaImagen()%>
-                            <br />
-                            Rango de edad: <%=k.get(i).getEdad()%>
-                            <br />
-                            Sexo: <%=k.get(i).getSex()%>
-                                                </p>
-                        <!-- Split button -->
-                        <div class="btn-group">
-                            
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                                Descrpción<span class="caret"></span><span class="sr-only">Descripción</span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><%=k.get(i).getDescripcion()%></li>
-                            </ul>
-                    </div>
-                       
-                </div>
-            </div>
-       </div>
-    </div>
-         <% }%>
-        
-         
-             </div>
-        
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>

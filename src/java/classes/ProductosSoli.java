@@ -111,7 +111,7 @@ private String usuario;
     /**
      * @return the rutaImagen
      */
-    public String geMascotas() {
+    public String getMascotas() {
         return mascotas;
     }
 

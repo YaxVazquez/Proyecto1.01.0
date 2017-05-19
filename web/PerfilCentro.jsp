@@ -14,12 +14,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Perfil del centro</title>
+        <title>Perfil - Dogs&CoAdmin</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="img/holi.ico" />
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/iconos.css">
         <link rel="stylesheet" href="css/estilos1.css">
         <link href="css/cese.css" rel="stylesheet">
 
@@ -59,7 +61,7 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <nav class="navbar navbar-default ">
+        <nav class="navbar navbar-fixed-top colos">
           <div class="container-fluid" >
             <div class="navbar-header" >
               <button class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -67,11 +69,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-                <a class="navbar-brand ">Perfil del centro</a>
+               <p class="navbar-brand hm-lkpa"><span class="icon icon-paw"> </span> Centros Dogs & Co.</p>
             </div>
             
             <div class="collapse navbar-collapse colo" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right ">
+            <ul class="nav navbar-nav navbar-right enlaces">
               
               <li><a href="DogsCentro.jsp">Perros</a></li>
               <li><a href="#" data-toggle="modal" data-target="#cambiar">Modificar Datos</a></li>
@@ -81,7 +83,7 @@
               
             </div>
             </div>
-</nav>
+        </nav>
             <section id="about" class="section-content about">
         <div class="container">
             <div class="row">
@@ -121,11 +123,11 @@
                     String tele = R.getString("Telefono");
                      String corr = R.getString("Correo");
                      String dir = R.getString("IdDireccion");
-                     out.println(" <h2 class='name'>"+nomb+" </h2>");  
+                     out.println(" <h1 class='name'>"+nomb+" </h1>");  
                    out.println(" <h2 class='position'>"+des+" </h2>");
                    out.println(" <br>"); 
-                   out.println(" <h4 class='text-center location'> Teléfono: "+tele+" </h4>");
-                   out.println(" <h4 class='text-center location'> Correo: "+corr+" </h4>");
+                   out.println(" <h3 class='text-center location'> Teléfono: "+tele+" </h3>");
+                   out.println(" <h3 class='text-center location'> Correo: "+corr+" </h3>");
                R = s.executeQuery("select * from DireccionCentro where IdDireccion='"+dir+"';");
                       if(R.next()){
                       
@@ -138,8 +140,8 @@
                       String est = R.getString("Estado");
                                        
                    
-                   out.println(" <h4 class='text-center location'>Calle "+call+" Número interior: "+numIn +" Número exterior: "+numEx+" Colonia "
-                           +col+" Delegación "+del+" "+est+"</h4>");
+                   out.println(" <h3 class='text-center location'>Calle "+call+" Número interior: "+numIn +" Número exterior: "+numEx+" Colonia "
+                           +col+" Delegación "+del+" "+est+"</h3>");
                    
                   
                       }
@@ -190,11 +192,11 @@
               out.println("<div class='modal-dialog modal-lg'>");
                 out.println("<div class='modal-content'>");
                   out.println("<form action='PerfilCentro.jsp' class='form-horizontal' method='post'>");
-                  out.println("<div class='modal-header'>");
+                  out.println("<div class='modal-header fondo'>");
                     out.println("<button class='close' aria-hidden='true' data-dismiss='modal'>&times;</button>");
-                    out.println("<h4 class='modal-title'>Modificar Datos</h4>");
+                    out.println("<h3 class='modal-title'>Modificar Datos</h3>");
                   out.println("</div>"
-                          + "<div class='modal-body'>"
+                          + "<div class='modal-body datox centrado'>"
                           + " <div class='form-group'>"
                           + " <label for='Nombre' class='col-xs-12 col-sm-12 col-md-1 col-md-offset-1 col-lg-1 col-lg-offset-1 control-label'> Nombre </label>"
                           + "<div class='col-xs-12 col-sm-12 col-md-4 col-lg-4'>"
@@ -210,8 +212,8 @@
                           + "<input type='text' class='form-control' name='fon' id='fon' value='"+tel+"'required></div></div><div class='form-group'>"
                           + "<label for='Contraseña' class='col-xs-12 col-sm-12 col-md-2 col-lg-2 control-label'>Correo</label>"
                           + "<div class='col-xs-12 col-sm-12 col-md-4 col-lg-4'>"
-                          + "<input type='text' class='form-control' name='correo' id='correo' value='"+corr+"'required></div></div></div><div class='modal-footer'>"
-                          + "<input type='submit' name='Modificar' id='Modificar' value='Modificar' onClick='return validar(nome,contrase,telefo,correo);'>"
+                          + "<input type='text' class='form-control' name='correo' id='correo' value='"+corr+"'required></div></div></div><div class='modal-footer nofond'>"
+                          + "<input type='submit' class='culbtn' name='Modificar' id='Modificar' value='Modificar' onClick='return validar(nome,contrase,telefo,correo);'>"
                           + " </div></form></div></div> </div>");
                     
                     

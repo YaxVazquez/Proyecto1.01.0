@@ -141,7 +141,7 @@ src: url(font/personality.ttf);
     width:65px;
     height: 34px;
     font-family: Lane;
-    font-size: 18px;
+    font-size: 21px;
     text-align: center;
     cursor: pointer;
     outline: none;
@@ -152,7 +152,7 @@ src: url(font/personality.ttf);
 }
 .culbtn>input:hover {
     background-color: rgba(0,0,0,0);
-    color: white;
+    color: black;
     box-shadow: inset 0 0 0 3px  #FBD157;
 }
 .campo{
@@ -366,4 +366,49 @@ src: url(font/personality.ttf);
 }
 .colorx.cambia-color {
     background-color: #ED9153;
+}
+.coloritoxx{
+    background-color: #ED9153;   
+}
+.enlaces3>li>a{
+	color: white;
+        font-family: Lane;
+        font-size: 28px;
+}
+.enlaces3>li>a.cambia-color{
+	color: black;
+}
+.enlaces3>li>a:hover,
+.enlaces3>li>a.hover
+{
+    color: #FBD157;
+    background-color: transparent;
+}
+.enlaces3> li>a:focus,
+.enlaces3>li>a.focus{
+    background-color: #FBD157;
+    color: white;
+    border-radius: 8px;
+    outline: 0px;
+}
+.enlaces3> li>a:active,
+.enlaces3>li>a.active{
+    background-color:  #FBD157;
+    outline: 0px;
+    border-radius: 8px;
+    color:white;
+}
+.hm-lkbb{
+	color: white;
+        font-family: Hiruko;
+        font-size: 23px;
+}
+.hm-lkbb:hover{
+    color: #FBD157;
+}
+.hm-lkbb:focus{
+    color: #FBD157;
+}
+.hm-lkbb:active{
+    color: #FBD157;
 }

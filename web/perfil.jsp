@@ -63,19 +63,19 @@
                                     String tel= r.getString("Telefono");
                                     String Descripcion= r.getString("Descripcion");
                                  %>
-         <nav class="navbar colorito">
+         <nav class="navbar coloritoxx">
           <div class="container-fluid">
               
-            <div class="navbar-header colorito">
+            <div class="navbar-header">
               <button class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="icon-bar hm-icon"></span>
                 <span class="icon-bar hm-icon"></span>
                 <span class="icon-bar hm-icon"></span>
               </button>
-              <a href="PaginaPrincipal.jsp" class="navbar-brand hm-lk"><span class="icon icon-paw"> </span>Dogs & Co.</a>
+              <a href="PaginaPrincipal.jsp" class="navbar-brand hm-lkbb"><span class="icon icon-paw"> </span>Dogs & Co.</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right enlaces">
+            <ul class="nav navbar-nav navbar-right enlaces3">
                 <li><a href="perfil.jsp"> <span class='glyphicon glyphicon-user'></span> <% 
                     out.println(NameUs); 
                    %> </a></li>
